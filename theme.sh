@@ -2,7 +2,8 @@
 
 FONT_DIR="$HOME/.local/share/fonts"
 FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Meslo.zip"
-WALLPAPER_PATH="$HOME/Imagens/wallpaper.jpg"
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+WALLPAPER_PATH="$SCRIPT_DIR/wallpaper.png"
 
 # Função para verificar se o i3 está instalado
 check_package() {
