@@ -22,7 +22,7 @@ echo "Iniciando a configuração do ambiente..."
 echo "Verificando se todos os pacotes foram instalados corretamente..."
 
 MISSING_PACKAGES=()
-PACKAGES=("neovim" "tmux" "tmuxinator" "curl" "unzip" "i3" "feh")
+PACKAGES=("neovim" "tmux" "tmuxinator" "curl" "unzip" "i3" "feh" "xbacklight" "xinput" "i3blocks" "rxvt-unicode-256color" "screen" "scrot" "redshift" "alsa-utils" "acpi" "fonts-font-awesome" "xdotool" "xclip")
 for package in "${PACKAGES[@]}"; do
   if ! dpkg -l | grep -q "$package"; then
     MISSING_PACKAGES+=("$package")
