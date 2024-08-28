@@ -58,7 +58,7 @@ function installTerminal() {
 	#	updatePackages
 
 	dialog --title "Instalando ferramentas..." --sleep 2 --infobox "Instalando ferramentas do terminal." 5 60
-	local terminalApps=("tmux" "tmuxinator" "curl" "unzip" "git")
+	local terminalApps=("neovim" "tmux" "tmuxinator" "curl" "unzip" "git")
 
 	for package in "${terminalApps[@]}"; do
 		if check_package "$package"; then
@@ -74,7 +74,7 @@ function installTerminal() {
 
 function installStyles() {
 	dialog --title "Instalando estilos..." --sleep 2 --infobox "Instalando estilos e fontes." 5 60
-	local styleApps=("i3" "feh" "xbacklight" "xinput" "i3blocks" "screen" "scrot" "redshift" "alsa-utils" "acpi" "fonts-font-awesome" "xdotool" "xclip")
+	local styleApps=("i3" "feh" "xresources" "screen" "polybar" "rofi" "alsa-utils")
 
 	for package in "${styleApps[@]}"; do
 		if check_package "$package"; then
