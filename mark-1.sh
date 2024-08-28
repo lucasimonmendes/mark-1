@@ -74,7 +74,7 @@ function installTerminal() {
 
 function installStyles() {
 	dialog --title "Instalando estilos..." --sleep 2 --infobox "Instalando estilos e fontes." 5 60
-	local styleApps=("i3" "feh" "xresources" "screen" "polybar" "rofi" "alsa-utils")
+	local styleApps=("i3" "feh" "x11-xserver-utils" "screen" "polybar" "rofi" "alsa-utils")
 
 	for package in "${styleApps[@]}"; do
 		if check_package "$package"; then
