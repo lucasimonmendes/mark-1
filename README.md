@@ -6,7 +6,7 @@
 
 ## Descrição
 
-Mark-1 é um script para instalar ferramentas do terminal e instalar e configurar o i3 window manager de forma automatizada.
+Mark-1 é um programa em Bash para instalar ferramentas do terminal e instalar o i3wm e ferramentas de tela de forma automatizada.
 
 ## O que o script instala
 
@@ -25,15 +25,10 @@ Mark-1 é um script para instalar ferramentas do terminal e instalar e configura
 - NerdFont Meslo
 - i3wm (window manager)
 - feh
-- xbacklight
-- xinput
-- rxvt-unicode-256color
+- xresources
+- polybar
 - screen
-- scrot
-- redshift
-- acpi
-- fonts-font-awesome
-- xclip
+- rofi
 
 ## Uso
 
@@ -42,8 +37,8 @@ Para uso do script, clone e execute-o utilizando:
 ```bash
 git clone https://github.com/lucasimonmendes/mark-1.git
 cd mark-1
-chmod +x mark-1.sh theme.sh terminal.sh
-./mark-1.sh
+chmod u+x mark-1.sh
+sudo ./mark-1.sh
 ```
 
 ## Autor

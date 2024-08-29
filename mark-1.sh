@@ -109,10 +109,6 @@ function installFonts() {
 	fi
 
 }
-# function updatePackages() {
-# 	dialog --title "Atualizando pacotes" --sleep 2 --infobox "Atualizando a lista de pacotes..." 5 60
-# 	sudo apt update &>/dev/null
-# }
 ######################################################
 
 ############################################ Main
@@ -131,17 +127,8 @@ menu=$(
 		"Instala fontes e ferramentas como window manager para a produtividade e estilo."
 )
 
-# O que o usuario escolheu
+# User choice
 case $menu in
 1) installTerminal ;;
 2) installStyles ;;
 esac
-
-# echo "Iniciando a configuração do ambiente..." # vai virar um dialog
-#
-# # Checagem final da instalação -> Checar logo apos terminar cada funcao
-# echo "Verificando se todos os pacotes foram instalados corretamente..."
-#
-#
-#
-# echo "Configuração do ambiente concluída."
